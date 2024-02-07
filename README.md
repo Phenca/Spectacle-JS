@@ -11,8 +11,13 @@ Ce projet permet de réserver des places pour un ou plusieurs spectacles en choi
  - Si une réservation est supprimée, la date associée a cette réservation est de nouveau dans la liste des dates réservable.
  - Lors de la validation des réservations, un message prévient l'utilisateur que sa réservation a bien été prise en compte.
 
-## Todo :
- - Faire le create element (plus facile a utiliser que le cloneNode)
- - Adapter le code au createElement
- - Ajouter le bouton de suppression et toute les fonctionnalités associés a la suppresion d'une réservation
- - Modifier l'id du selecteur de date après avoir ajouter un nouveau formulaire et celui des dates du selector
+## Étapes :
+ - Création de la page HTML 'de base' (fichier index.html)
+ - Stylisation de la page avec index.css
+ - Ajout du fichier index.js et de ses fonctionnalités :
+    - Ecouteur d'événement sur le bouton d'ajout de formulaires
+    - Ajout du formulaire lors du clic (création du div et du form, ajout des options en fonction du tableau options)
+    - Bouton de suppression de formulaire pour chaque nouveau formulaire & écouteur d'événements pour suppression
+    - fonction updateOptions pour que les options du selecteur soient supprimées de options et ajoutées a removed_options lors d'un ajout de formulaire et inverssement lors de la suppression
+    - Désactivation et réactivation des sélecteurs de dates pour les formulaires précédant (lors de l'ajout de formulaire)
+    - Désactivation et réactivation du bouton d'ajout de formulaire (si plus d'options dans le tableau options) et réactivation lors de la suppression
